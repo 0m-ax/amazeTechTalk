@@ -1,0 +1,33 @@
+{
+  "name": "amazetechtalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/initd-daemon/amazeTechTalk.git"
+  },
+  "author": "max campbell, jacob geeeeeeeeeeeee clark, ben e king",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/initd-daemon/amazeTechTalk/issues"
+  },
+  "homepage": "https://github.com/initd-daemon/amazeTechTalk#readme",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "~4.13.4",
+    "morgan": "~1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
