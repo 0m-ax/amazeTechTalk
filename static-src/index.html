@@ -2,15 +2,85 @@
     <head>
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme.css">
+        <script src="/socket.io/socket.io.js"></script>
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
                 <section>Slide 1</section>
-                <section>Slide 2</section>
+                <section data-state="start-server">
+                    <h2>Start http server</h2>
+                    <hr>
+                    <div class="left">
+                        <h3>Connections</h3>
+                        <h3>Server:<span class="server-num">0</span></h3>
+                        <h3>Attacker:<span class="attack-num">0</span></h3>
+                    </div>
+                    <div class="right">
+                        <div class="wrap">
+                            <iframe src="http://localhost:3000/load?frame=1"></iframe>
+                        </div>
+                        <div class="wrap">
+                            <iframe src="http://localhost:3000/load?frame=2"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section data-state="start-attack">
+                    <h2>Start attack</h2>
+                    <hr>
+                    <div class="left">
+                        <h3>Connections</h3>
+                        <h3>Server:<span class="server-num">0</span></h3>
+                        <h3>Attacker:<span class="attack-num">0</span></h3>
+                    </div>
+                    <div class="right">
+                        <div class="wrap">
+                            <iframe src="http://localhost:3000/load?frame=1"></iframe>
+                        </div>
+                        <div class="wrap">
+                            <iframe src="http://localhost:3000/load?frame=2"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section data-state="stop-attack">
+                    <h2>Stop attack</h2>
+                    <hr>
+                    <div class="left">
+                        <h3>Connections</h3>
+                        <h3>Server:<span class="server-num">0</span></h3>
+                        <h3>Attacker:<span class="attack-num">0</span></h3>
+                    </div>
+                    <div class="right">
+                        <div class="wrap">
+                            <iframe src="http://localhost:3000/load?frame=1"></iframe>
+                        </div>
+                        <div class="wrap">
+                            <iframe src="http://localhost:3000/load?frame=2"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section data-state="stop-server">
+                    <h2>Stop http server</h2>
+                    <hr>
+                    <div class="left">
+                        <h3>Connections</h3>
+                        <h3>Server:<span class="server-num">0</span></h3>
+                        <h3>Attacker:<span class="attack-num">0</span></h3>
+                    </div>
+                    <div class="right">
+                        <div class="wrap">
+                            <iframe src="http://localhost:3000/load?frame=1"></iframe>
+                        </div>
+                        <div class="wrap">
+                            <iframe src="http://localhost:3000/load?frame=2"></iframe>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
         <script src="js/reveal.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/index.js"></script>
         <script>
             Reveal.initialize();
         </script>

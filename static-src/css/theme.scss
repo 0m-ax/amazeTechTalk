@@ -42,8 +42,29 @@ section.has-light-background {
 		color: #222;
 	}
 }
+.left{
+	float:left;
+	width:50%;
+}
+.right{
+	float:right;
+	width:50%;
+}
+iframe{
+	display: block;
+	width: 100%;
+}
+.wrap{
+		background-color: #fff;
+	border: 10px!important;
+	border-style: solid!important;
+	border-color: rgba(0,0,0,0)!important;
+	   transition: border-color .25s ease-in-out;
 
-
+}
+.loading{
+	border-color: greenyellow!important;	
+}
 // Theme template ------------------------------
 @import "_includes/theme";
 // ---------------------------------------------
