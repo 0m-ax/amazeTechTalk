@@ -7,14 +7,21 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>Slide 1</section>
+                <section>
+                    <h1>Denial of Service</h1>
+                    <h2>Slowloris</h1>
+                </section>
+                <section><h1>What is affected</h1></section>
+                <section data-background-iframe="type.html"><h1>How the attack works</h1></section>
+                <section><h1>Live demo</h1><h4>Demos allways go well</h4></section>
+                <section><iframe class="full" src="https://www.amaze.com/"></iframe></section>
                 <section data-state="start-server">
-                    <h2>Start http server</h2>
+                    <h2>Start server</h2>
                     <hr>
                     <div class="left">
                         <h3>Connections</h3>
                         <h3>Server:<span class="server-num">0</span></h3>
-                        <h3>Attacker:<span class="attack-num">0</span></h3>
+                        <h3 class="attack">Attacker:<span class="attack-num">0</span></h3>
                     </div>
                     <div class="right">
                         <div class="wrap">
@@ -31,7 +38,7 @@
                     <div class="left">
                         <h3>Connections</h3>
                         <h3>Server:<span class="server-num">0</span></h3>
-                        <h3>Attacker:<span class="attack-num">0</span></h3>
+                        <h3 class="attack">Attacker:<span class="attack-num">0</span></h3>
                     </div>
                     <div class="right">
                         <div class="wrap">
@@ -48,7 +55,7 @@
                     <div class="left">
                         <h3>Connections</h3>
                         <h3>Server:<span class="server-num">0</span></h3>
-                        <h3>Attacker:<span class="attack-num">0</span></h3>
+                        <h3 class="attack">Attacker:<span class="attack-num">0</span></h3>
                     </div>
                     <div class="right">
                         <div class="wrap">
@@ -60,12 +67,12 @@
                     </div>
                 </section>
                 <section data-state="stop-server">
-                    <h2>Stop http server</h2>
+                    <h2>Stop server</h2>
                     <hr>
                     <div class="left">
                         <h3>Connections</h3>
                         <h3>Server:<span class="server-num">0</span></h3>
-                        <h3>Attacker:<span class="attack-num">0</span></h3>
+                        <h3 class="attack">Attacker:<span class="attack-num">0</span></h3>
                     </div>
                     <div class="right">
                         <div class="wrap">
@@ -75,6 +82,12 @@
                             <iframe src="/load?frame=2"></iframe>
                         </div>
                     </div>
+                </section>
+                <section>
+                    <h1>How to prevent it</h1>
+                </section>
+                <section  data-background-video="img/out.mp4">
+                    <h1>Questions</h1>
                 </section>
             </div>
         </div>

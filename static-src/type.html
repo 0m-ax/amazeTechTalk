@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+        body{
+            background-color: black;
+        }
+        .element{
+            color: green;
+            font-size: 100px;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+        .typed-cursor{
+            color: green;
+                        font-family: "Lucida Console", Monaco, monospace;
+
+                     font-size: 100px;
+   
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+</style>
+        </head>
+        <body>
+
+<span class="element"></span>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/typed.min.js"></script>
+<script>
+    $(function(){
+        $(".element").typed({
+            loop: true,
+            strings: ["GET /index.html HTTP/1.1<br>Host: www.example.com<br> <br> "],
+            typeSpeed: 500
+        });
+    });
+</script>
+</body>
+</html>

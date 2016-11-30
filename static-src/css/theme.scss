@@ -54,6 +54,10 @@ iframe{
 	display: block;
 	width: 100%;
 }
+.full {
+	height: 100%;
+}
+
 .wrap{
 		background-color: #fff;
 	border: 10px!important;
@@ -68,3 +72,6 @@ iframe{
 // Theme template ------------------------------
 @import "_includes/theme";
 // ---------------------------------------------
+.attack{
+	color: red!important;
+}
